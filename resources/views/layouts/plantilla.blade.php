@@ -6,7 +6,7 @@
     <title>@yield('title')</title>
     <!--favicon-->
     <!--styles-->
-    <style>
+    <style>  
         .active{
             color: red;
             font-weight: bold;
