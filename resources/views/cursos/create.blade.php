@@ -15,6 +15,16 @@
         {{$message}}
     @enderror
     <br>
+
+    <label>
+        Slug:<br>
+        <input type="text" name="slug" value="{{old('slug')}}">
+    </label>
+    @error('slug')
+        {{$message}}
+    @enderror
+    <br>
+
     <label>
         Descripcion:<br>
         <textarea name="descripcion" rows="5">{{old('descripcion')}}</textarea>

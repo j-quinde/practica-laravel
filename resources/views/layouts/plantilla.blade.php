@@ -6,10 +6,17 @@
     <title>@yield('title')</title>
     <!--favicon-->
     <!--styles-->
+    <style>
+        .active{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <!--header-->
     <!--nav-->
+    @include('layouts.partials.header')
     @yield('content')
     <!--footer-->
     <!--script-->

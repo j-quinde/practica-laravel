@@ -15,6 +15,7 @@ return new class extends Migration
 
             $table->id();
             $table->string('name');
+            $table->string('slug')->unique();
             $table->text('descripcion');
             $table->text('categoria');
             $table->timestamps(); //created_at y updated_at

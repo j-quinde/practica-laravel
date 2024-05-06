@@ -56,7 +56,7 @@ class CursoController extends Controller
         $curso->descripcion = $request->descripcion;
         $curso->categoria = $request->categoria;
         $curso->save(); */
-        $curso->update($request->all());
+        $curso->update($request->all());//hace lo mismo que lo comentado lineas anteriores
         return view('cursos.show', compact('curso'));
     }
 

@@ -15,7 +15,7 @@ use App\Http\Controllers\CursoController;
 |
 */
 
-Route::get('/', HomeController::class);
+Route::get('/', HomeController::class)->name('home');
 
 
 /*Route::controller(CursoController::class)->group(function () {
@@ -41,3 +41,5 @@ Route::resource('cursos',CursoController::class);//hace lo mismo que esta en el 
         return "Estas en el curso: $curso";
     }
 }); */
+
+Route::view('nosotros','nosotros')->name('nosotros');
